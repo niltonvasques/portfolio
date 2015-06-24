@@ -1,14 +1,95 @@
 <head>
-  <title>niltonvasques</title>
+  <title>Nilton Vasques</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-  <h1>Welcome to Meteor!</h1>
+  <div class="navbar-fixed">
+    <nav class="indigo darken-3">
+      <div class="nav-wrapper container">
+        <a href="#!" class="brand-logo">Nilton Vasques</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#me">Sobre</a></li>
+          <li><a href="#skills">Conhecimentos</a></li>
+          <li><a href="#skills">Projetos</a></li>
+          <li><a href="#how">Contato</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 
-  {{> hello}}
+  <div id="me" class="section indigo darken-4">
+    <div class="container">
+      <div class="center">
+        <h1 class="white-text">
+          Nilton Vasques
+        </h1>
+        <h3 class="white-text">
+          Developer 
+        </h3>
+        <img id="profile" src="images/profile.jpg" alt="" class="circle responsive-img z-depth-3">
+        <p class="flow-text white-text">
+          Atualmente  é  monitor  da  Universidade  Federal  da  Bahia.  
+          Tem  experiência  na  área  de  Ciência  da  Computação,  com  ênfase  em  agrupamento fuzzy de documentos, com experiências profissionais em desenvolvimento de jogos, android, ruby on rails, nodejs, Meteor, Linux, MySQL, Postgres e .NET .
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="skills" class="container">
+    <div class="section">
+      <div class="row">
+        {{#each skills}}
+        {{> skill}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+  <div id="how" class="container">
+    <div class="section">
+      <div class="row">
+        <div class="card-panel blue">
+          <h2 class="white-text">How to reach me</h2>
+          <span class="white-text flow-text">
+            Caso deseje entrar em contato comigo para conversar sobre algum trabalho, ou sobre a 
+            vida o universo e tudo mais, envie um email para nilton.vasques{at}gmail.com.
+            <!--
+              If you want contact me for talk about some work or other random talk about life, 
+              universe and everything more, so please feel free to email me at 
+              nilton.vasques{at}gmail.com.
+              -->
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer grey darken-1">
+    <div class="container">
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        © 2015 by Nilton Vasques
+      </div>
+    </div>
+  </footer>
+
 </body>
 
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+
+<template name="skill">
+  <div class="col s12 m4">
+    <div class="icon-block">
+      <h2 class="center light-blue-text">
+        {{#if image}}
+        <img id="logo-img" class="responsive-img" src="{{image_url}}">
+        {{else}}
+        <i class="large material-icons">{{icon}}</i>
+        {{/if}}
+      </h2>
+      <h5 class="center">{{name}}</h5>
+      <p class="light">{{description}}</p>
+    </div>
+  </div>
 </template>

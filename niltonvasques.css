@@ -1,1 +1,16 @@
 /* CSS declarations go here */
+
+h1, h2, h3 {
+  font-weight: 100;
+}
+
+#profile {
+  width: 200px;
+}
+
+#logo-img{
+  max-height: 100px;
+  max-width: 50%;
+}
+
+
