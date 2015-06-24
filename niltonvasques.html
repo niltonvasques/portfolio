@@ -5,7 +5,7 @@
 
 <body>
   <div class="navbar-fixed">
-    <nav class="indigo darken-3">
+    <nav class="blue-grey darken-3">
       <div class="nav-wrapper container">
         <a href="#!" class="brand-logo">Nilton Vasques</a>
         <ul class="right hide-on-med-and-down">
@@ -18,7 +18,7 @@
     </nav>
   </div>
 
-  <div id="me" class="section indigo darken-4 z-depth-2">
+  <div id="me" class="section blue-grey darken-4 z-depth-2">
     <div class="container">
       <div class="center">
         <h1 class="white-text">
@@ -39,8 +39,18 @@
   <div id="skills" class="container">
     <div class="section">
       <div class="row">
-        {{#each skills}}
-        {{> skill}}
+        {{#each skills1}}
+          {{> skill}}
+        {{/each}}
+      </div>
+      <div class="row">
+        {{#each skills2}}
+          {{> skill}}
+        {{/each}}
+      </div>
+      <div class="row">
+        {{#each skills3}}
+          {{> skill}}
         {{/each}}
       </div>
     </div>
@@ -51,13 +61,36 @@
     </div>
   </div>
 
-  <div class="section indigo darken-3 z-depth-2">
+  <div class="section blue-grey darken-4 z-depth-2">
     <div id="how" class="container">
       <div class="row">
-        <h2 class="white-text">How to reach me</h2>
+        <h2 class="white-text">Como me encontrar?</h2>
         <span class="white-text flow-text">
           Caso deseje entrar em contato comigo para conversar sobre algum trabalho, ou sobre a 
-          vida o universo e tudo mais, envie um email para nilton.vasques{at}gmail.com.
+          vida o universo e tudo mais, envie um email para nilton.vasques{at}gmail.com, ou envie uma 
+          mensagem para qualquer uma das milhares de redes sociais.
+          <p>
+            <i class="material-icons">email</i>
+            nilton.vasques{at}gmail.com
+          </p>
+          <p>
+            <i class="fa fa-twitter"></i>
+            <a href="http://twitter.com/NiltonVasques">
+              http://twitter.com/NiltonVasques
+            </a>
+          </p>
+          <p>
+            <i class="fa fa-facebook-official"></i>
+            <a href="https://www.facebook.com/niltonvasques">
+              https://www.facebook.com/niltonvasques
+            </a>
+          </p>
+          <p>
+            <i class="fa fa-google-plus"></i>
+            <a href="https://plus.google.com/+NiltonVasques">
+              https://plus.google.com/+NiltonVasques
+            </a>
+          </p>
           <!--
             If you want contact me for talk about some work or other random talk about life, 
             universe and everything more, so please feel free to email me at 
@@ -92,6 +125,9 @@
         {{/if}}
       </h2>
       <h5 class="center">{{name}}</h5>
+      <div class="progress">
+        <div class="determinate" style="width: {{level}}"></div>
+      </div>
       <p class="light">{{description}}</p>
     </div>
   </div>
