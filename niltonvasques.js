@@ -21,8 +21,22 @@ if (Meteor.isClient) {
     ],
     skills3 : [
       { image_url: "images/meteor.png", name: "Meteor", level: "10%",
-        description: "Estou estudando o Meteor como uma possível alternativa para desenvolvimento web de sistemas de tempo real, usando códigos reativos.", image: true}
+        description: "Estou estudando o Meteor como uma possível alternativa para desenvolvimento web de sistemas de tempo real, usando códigos reativos.", image: true},
+      { image_url: "images/docker.jpg", name: "Docker", level: "20%",
+        description: "Após conhecer o docker, toda a dor de cabeça nas fases de configuração de ambientes de desenvolvimento e de deploy se foram.", image: true}
+    ],
+    projects : [
+      { name: "Pega Ladrão", image: "images/pega-ladrao.jpg", link_text: "Google Play",
+        link : "https://play.google.com/store/apps/details?id=com.mobiloucos2.pegaladrao",
+        description: "Você teme que seu telefone seja levado enquanto você estiver distraído? Ou que alguém olhe suas informações pessoais? Pega Ladrão é o aplicativo certo para você, caso alguma pessoa pegue o seu telefone enquanto o Pega Ladrão estiver ativo, ele vai soar um alarme alto, disparar um sirene da polícia, começar a vibrar e a piscar efeitos na tela, fazendo assim que a pessoa desista de levar seu telefone, ou melhor que você perceba que alguém está com ele." },
+      { name: "Marcador de Livros Android", image: "images/bookmark.jpg", 
+        link_text: "Google Play",
+        link : "https://play.google.com/store/apps/details?id=com.mobiloucos2.marcadordelivros",
+        description: "Marque onde parou as leituras de seus livros com o Marcador de Livros.          Faça no celular, as marcações dos livros que você lê! Economize espaço, papel, e nunca perca as marcações das leituras de seus livros favoritos! Acompanhe o andamento das leituras de todos seus livros com o Marcador de Livros, além de guardar na lista os livros que você já leu ou vai ler, como uma estante virtual móvel!." }
     ]
+  });
+
+  Template.project.helpers({
   });
 
   Template.hello.helpers({

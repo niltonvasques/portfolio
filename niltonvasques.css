@@ -13,4 +13,8 @@ h1, h2, h3 {
   max-width: 50%;
 }
 
+#logo-container{
+  height: 100px;
+}
+
 
