@@ -6,9 +6,9 @@ if (Meteor.isClient) {
     skills1 : [
       { image_url: "images/android.png", name: "Android", level: "90%",
         description: "Possuo conhecimentos avançados no desenvolvimento de aplicativos para a plataforma android, com mais de 4 anos de experiência. Com mais de 1 milhão de downloads obtidos com os aplicativos próprios publicados no Google Play.", image: true},
-      { image_url: "images/git.png", name: "GIT", level: "80%",
+      { image_url: "images/git.png", name: "GIT", level: "75%",
         description: "Domínio da ferramenta de controle de versão GIT, através da linha de comando.", image: true},
-      { image_url: "images/linux.png", name: "Linux", level: "70%",
+      { image_url: "images/linux.png", name: "Linux", level: "80%",
         description: "Avançados conhecimentos da plataforma Linux, com bons conhecimentos nas ferramentas do bash, na linguagem shell script, assim com também conhecimentos básicos na configuração de servidores.", image: true},
     ],
     skills2 : [
