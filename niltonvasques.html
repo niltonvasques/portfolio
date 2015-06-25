@@ -10,7 +10,7 @@
         <a href="#!" class="brand-logo">Nilton Vasques</a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#me">Sobre</a></li>
-          <li><a href="#skills">Conhecimentos</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projetos</a></li>
           <li><a href="#how">Contato</a></li>
         </ul>
@@ -29,8 +29,7 @@
         </h3>
         <img id="profile" src="images/profile.jpg" alt="" class="circle responsive-img z-depth-3">
         <p class="flow-text white-text">
-          Atualmente  é  monitor  da  Universidade  Federal  da  Bahia.  
-          Tem  experiência  na  área  de  Ciência  da  Computação,  com  ênfase  em  agrupamento fuzzy de documentos, com experiências profissionais em desenvolvimento de jogos, android, ruby on rails, nodejs, Meteor, Linux, MySQL, Postgres e .NET .
+          Sou graduando em Ciência da Computação na  Universidade  Federal  da  Bahia, com enfâse em agrupamento e extração de descritores fuzzy em documentos de text. Possuo experiências  nas  áreas de desenvolvimento de jogos, android, ruby on rails, nodejs, Meteor, Linux, MySQL, Postgres e .NET. Programo nas linguagens de programação Java, Ruby, C/C++, SQL, Shell Script, Prolog e C#.
         </p>
       </div>
     </div>
@@ -38,6 +37,7 @@
 
   <div id="skills" class="container">
     <div class="section">
+      <h1>Skills</h1>
       <div class="row">
         {{#each skills1}}
           {{> skill}}
@@ -59,6 +59,7 @@
   <div id="projects" class="section">
     <div class="container">
       <div class="section">
+        <h1>Projetos</h1>
         <div class="row">
           {{#each projects}}
             {{> project}}
@@ -74,27 +75,26 @@
         <h2 class="white-text">Como me encontrar?</h2>
         <span class="white-text flow-text">
           Caso deseje entrar em contato comigo para conversar sobre algum trabalho, ou sobre a 
-          vida o universo e tudo mais, envie um email para nilton.vasques{at}gmail.com, ou envie uma 
-          mensagem para qualquer uma das milhares de redes sociais.
+          vida o universo e tudo mais, sinta-se a vontade para me enviar uma mensagem para qualquer uma das redes sociais abaixo.
           <p>
             <i class="material-icons">email</i>
             nilton.vasques{at}gmail.com
           </p>
           <p>
             <i class="fa fa-twitter"></i>
-            <a href="http://twitter.com/NiltonVasques">
+            <a target="_blank"  href="http://twitter.com/NiltonVasques">
               http://twitter.com/NiltonVasques
             </a>
           </p>
           <p>
             <i class="fa fa-facebook-official"></i>
-            <a href="https://www.facebook.com/niltonvasques">
+            <a target="_blank"  href="https://www.facebook.com/niltonvasques">
               https://www.facebook.com/niltonvasques
             </a>
           </p>
           <p>
             <i class="fa fa-google-plus"></i>
-            <a href="https://plus.google.com/+NiltonVasques">
+            <a target="_blank"  href="https://plus.google.com/+NiltonVasques">
               https://plus.google.com/+NiltonVasques
             </a>
           </p>
@@ -143,8 +143,31 @@
         <img class="activator" src="{{image}}">
       </div>
       <div class="card-content">
-        <span class="card-title activator grey-text text-darken-4">{{name}}</span>
-        <p><a href="{{link}}">{{link_text}}</a></p>
+        <div class="row">
+          <span class="card-title activator grey-text text-darken-4">
+            <div class="col s8 m8">
+              <p>
+                <i class="fa fa-android lime-text text-accent-4"></i>
+                {{name}}
+              </p>
+            </div>
+            <div class="col s4 m4">
+              <p class="amber-text text-darken-2">
+                {{rating}}
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </p>
+            </div>
+          </span>
+        </div>
+        <div class="row">
+          <div class="col s12 m12">
+            <p><a target="_blank"  href="{{link}}">{{link_text}}</a></p>
+          </div>
+        </div>
       </div>
       <div class="card-reveal">
         <span class="card-title grey-text text-darken-4">{{name}}</span>

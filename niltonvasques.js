@@ -7,13 +7,13 @@ if (Meteor.isClient) {
       { image_url: "images/android.png", name: "Android", level: "90%",
         description: "Possuo conhecimentos avançados no desenvolvimento de aplicativos para a plataforma android, com mais de 4 anos de experiência. Com mais de 1 milhão de downloads obtidos com os aplicativos próprios publicados no Google Play.", image: true},
       { image_url: "images/git.png", name: "GIT", level: "75%",
-        description: "Domínio da ferramenta de controle de versão GIT, através da linha de comando.", image: true},
+        description: "Fico me perguntando como devia ser caótico o desenvolvimento colaborativo, sem o GIT. Integrar alterações em diversas partes do código, realizadas por vários desenvolvedores nunca foi tão simples e eficaz. Possuo amplos conhecimentos no uso do GIT, através da linha de comando.", image: true},
       { image_url: "images/linux.png", name: "Linux", level: "80%",
         description: "Avançados conhecimentos da plataforma Linux, com bons conhecimentos nas ferramentas do bash, na linguagem shell script, assim com também conhecimentos básicos na configuração de servidores.", image: true},
     ],
     skills2 : [
       { image_url: "images/rails.png", name: "Ruby on Rails", level: "50%",
-        description: "Conhecimentos básicos no framework Ruby on Rails, no qual continuo em constante processo de aprimoramento.", image: true},
+        description: "Esse framework mudou completamente minha forma de pensar o desenvolvimento web. O que antes eu considerava um tarefa entendiante, hoje considero prazerosa. E isso se deve a robustez de um framework, escrito sobre os ombros da poderosa e inteligível linguagem ruby.", image: true},
       { image_url: "images/vim.png", name: "Vim", level: "80%",
         description: "O vim atualmente é mais do que um editor de textos para mim. Ele substituiu quase que por completo a maioria das IDEs que utilizava, e em troca eu ganhei um boost de produtividade sem precedentes.", image: true},
       { image_url: "images/nodejs.png", name: "NodeJS", level: "10%",
@@ -27,10 +27,11 @@ if (Meteor.isClient) {
     ],
     projects : [
       { name: "Pega Ladrão", image: "images/pega-ladrao.jpg", link_text: "Google Play",
+        rating: "4.4",
         link : "https://play.google.com/store/apps/details?id=com.mobiloucos2.pegaladrao",
         description: "Você teme que seu telefone seja levado enquanto você estiver distraído? Ou que alguém olhe suas informações pessoais? Pega Ladrão é o aplicativo certo para você, caso alguma pessoa pegue o seu telefone enquanto o Pega Ladrão estiver ativo, ele vai soar um alarme alto, disparar um sirene da polícia, começar a vibrar e a piscar efeitos na tela, fazendo assim que a pessoa desista de levar seu telefone, ou melhor que você perceba que alguém está com ele." },
       { name: "Marcador de Livros Android", image: "images/bookmark.jpg", 
-        link_text: "Google Play",
+        link_text: "Google Play", rating: "4.5",
         link : "https://play.google.com/store/apps/details?id=com.mobiloucos2.marcadordelivros",
         description: "Marque onde parou as leituras de seus livros com o Marcador de Livros.          Faça no celular, as marcações dos livros que você lê! Economize espaço, papel, e nunca perca as marcações das leituras de seus livros favoritos! Acompanhe o andamento das leituras de todos seus livros com o Marcador de Livros, além de guardar na lista os livros que você já leu ou vai ler, como uma estante virtual móvel!." }
     ]
