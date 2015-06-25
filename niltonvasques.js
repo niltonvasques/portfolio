@@ -27,13 +27,17 @@ if (Meteor.isClient) {
     ],
     projects : [
       { name: "Pega Ladrão", image: "images/pega-ladrao.jpg", link_text: "Google Play",
-        rating: "4.4",
+        rating: "4.4", fa: "android",fa_color: "lime-text text-accent-4",
         link : "https://play.google.com/store/apps/details?id=com.mobiloucos2.pegaladrao",
         description: "Você teme que seu telefone seja levado enquanto você estiver distraído? Ou que alguém olhe suas informações pessoais? Pega Ladrão é o aplicativo certo para você, caso alguma pessoa pegue o seu telefone enquanto o Pega Ladrão estiver ativo, ele vai soar um alarme alto, disparar um sirene da polícia, começar a vibrar e a piscar efeitos na tela, fazendo assim que a pessoa desista de levar seu telefone, ou melhor que você perceba que alguém está com ele." },
-      { name: "Marcador de Livros Android", image: "images/bookmark.jpg", 
-        link_text: "Google Play", rating: "4.5",
+      { name: "Marcador de Livros Android", image: "images/bookmark.jpg", fa: "android",
+        link_text: "Google Play", rating: "4.5", fa_color: "lime-text text-accent-4",
         link : "https://play.google.com/store/apps/details?id=com.mobiloucos2.marcadordelivros",
-        description: "Marque onde parou as leituras de seus livros com o Marcador de Livros.          Faça no celular, as marcações dos livros que você lê! Economize espaço, papel, e nunca perca as marcações das leituras de seus livros favoritos! Acompanhe o andamento das leituras de todos seus livros com o Marcador de Livros, além de guardar na lista os livros que você já leu ou vai ler, como uma estante virtual móvel!." }
+        description: "Marque onde parou as leituras de seus livros com o Marcador de Livros.          Faça no celular, as marcações dos livros que você lê! Economize espaço, papel, e nunca perca as marcações das leituras de seus livros favoritos! Acompanhe o andamento das leituras de todos seus livros com o Marcador de Livros, além de guardar na lista os livros que você já leu ou vai ler, como uma estante virtual móvel!." },
+      { name: "Atlântico Português", image: "images/atlantico.jpg", fa: "desktop",
+        link_text: "Atlântico Portal",fa_color: "black-text",
+        link : "https://www.atlanticoportugues.ufba.br",
+        description: "O portal Atlântico Português foi desenvolvido em Ruby on Rails, e tem como objetivo hospedar documentos históricos. Facilitando assim o acesso dos documentos aos pesquisadores envolvidos no projeto. Para a realização das buscas, utilizou-se o robusto framework de indexação reversa Solr, acelerando assim a velocidade do resultado das buscas." }
     ]
   });
 

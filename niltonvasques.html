@@ -12,7 +12,7 @@
           <li><a href="#me">Sobre</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projetos</a></li>
-          <li><a href="#how">Contato</a></li>
+          <li><a href="#contact">Contato</a></li>
         </ul>
       </div>
     </nav>
@@ -29,7 +29,7 @@
         </h3>
         <img id="profile" src="images/profile.jpg" alt="" class="circle responsive-img z-depth-3">
         <p class="flow-text white-text">
-          Sou graduando em Ciência da Computação na  Universidade  Federal  da  Bahia, com enfâse em agrupamento e extração de descritores fuzzy em documentos de text. Possuo experiências  nas  áreas de desenvolvimento de jogos, android, ruby on rails, nodejs, Meteor, Linux, MySQL, Postgres e .NET. Programo nas linguagens de programação Java, Ruby, C/C++, SQL, Shell Script, Prolog e C#.
+          Sou graduando em Ciência da Computação na  Universidade  Federal  da  Bahia, com enfâse em agrupamento e extração de descritores fuzzy em documentos de texto. Possuo experiências  nas  áreas de desenvolvimento de jogos, android, ruby on rails, nodejs, Meteor, Linux, MySQL, Postgres e .NET. Programo nas linguagens de programação Java, Ruby, C/C++, SQL, Shell Script, Prolog e C#.
         </p>
       </div>
     </div>
@@ -70,7 +70,7 @@
   </div>
 
   <div class="section blue-grey darken-4 z-depth-2">
-    <div id="how" class="container">
+    <div id="contact" class="container">
       <div class="row">
         <h2 class="white-text">Como me encontrar?</h2>
         <span class="white-text flow-text">
@@ -147,10 +147,11 @@
           <span class="card-title activator grey-text text-darken-4">
             <div class="col s8 m8">
               <p>
-                <i class="fa fa-android lime-text text-accent-4"></i>
+                <i class="fa fa-{{fa}} {{fa_color}}"></i>
                 {{name}}
               </p>
             </div>
+            {{#if rating}}
             <div class="col s4 m4">
               <p class="amber-text text-darken-2">
                 {{rating}}
@@ -161,6 +162,7 @@
                 <i class="fa fa-star-half-o"></i>
               </p>
             </div>
+            {{/if}}
           </span>
         </div>
         <div class="row">
