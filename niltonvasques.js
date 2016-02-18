@@ -37,7 +37,11 @@ if (Meteor.isClient) {
       { name: "Atlântico Português", image: "images/atlantico.jpg", fa: "desktop",
         link_text: "Atlântico Portal",fa_color: "black-text",
         link : "https://www.atlanticoportugues.ufba.br",
-        description: "O portal Atlântico Português foi desenvolvido em Ruby on Rails, e tem como objetivo hospedar documentos históricos. Facilitando assim o acesso dos documentos aos pesquisadores envolvidos no projeto. Para a realização das buscas, utilizou-se o robusto framework de indexação reversa Solr, acelerando assim a velocidade do resultado das buscas." }
+        description: "O portal Atlântico Português foi desenvolvido em Ruby on Rails, e tem como objetivo hospedar documentos históricos. Facilitando assim o acesso dos documentos aos pesquisadores envolvidos no projeto. Para a realização das buscas, utilizou-se o robusto framework de indexação reversa Solr, acelerando assim a velocidade do resultado das buscas." },
+      { name: "Project Management System", image: "images/pms.jpg", fa: "desktop",
+        link_text: "PMS",fa_color: "black-text",
+        link : "https://pms.wolkenbox.com",
+        description: "O sistema de gerenciamento de projetos industriais (PMS) foi desenvolvido com o objetivo de otimizar os processos internos de requisição, estimativa, planejamento, execução e medição de serviços industriais. Desenvolvido em Ruby on Rails utilizando containers Docker." }
     ]
   });
 
